@@ -8,7 +8,7 @@ public class Log {
     }
 
     public static void log(String message) {
-        Logger logger = Logger.getLogger(Log.class.getName());
+        Logger logger = Logger.getLogger(Log.class.getName()); 
         logger.info(message);
     }
 }
