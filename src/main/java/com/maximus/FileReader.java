@@ -8,7 +8,7 @@ import java.util.List;
 public class FileReader {
     private FileReader() {
         throw new IllegalStateException("Utility class");
-    } 
+    }
 
     public static String readTextFromFile(String filePath) throws IOException {
         return Files.readString(Paths.get(filePath));
