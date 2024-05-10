@@ -72,7 +72,7 @@
       <recent name="F:\Documents\TextMoodAnalyzer\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MoodWordListTest">
+  <component name="RunManager" selected="Application.TextMoodAnalyzer">
     <configuration name="TextMoodAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.maximus.TextMoodAnalyzer" />
       <module name="TextMoodAnalyzer" />
@@ -116,10 +116,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextMoodAnalyzer" />
         <item itemvalue="JUnit.MoodWordListTest" />
         <item itemvalue="JUnit.MoodWordListTest.testLoadPropsFromStream" />
         <item itemvalue="JUnit.MoodScorerTest" />
-        <item itemvalue="Application.TextMoodAnalyzer" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715285120284</updated>
       <workItem from="1715285121349" duration="5948000" />
-      <workItem from="1715344868683" duration="7707000" />
+      <workItem from="1715344868683" duration="8315000" />
     </task>
     <servers />
   </component>

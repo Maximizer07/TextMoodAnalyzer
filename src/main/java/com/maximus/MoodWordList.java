@@ -48,4 +48,12 @@ public class MoodWordList {
             System.out.println("Ошибка чтения файла: " + e.getMessage());
         }
     }
+
+    public void addPositiveWord(String newPositiveWord) {
+        positiveWords.add(newPositiveWord);
+    }
+
+    public void addNegativeWord(String newNegativeWord) {
+        negativeWords.add(newNegativeWord);
+    }
 }

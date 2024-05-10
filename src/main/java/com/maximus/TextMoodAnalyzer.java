@@ -1,7 +1,6 @@
 package com.maximus;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
 public class TextMoodAnalyzer {
     public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class TextMoodAnalyzer {
             String negativeWordsPath = props.getProperty("negative_words_file");
             wordList.loadWords(positiveWordsPath, negativeWordsPath);
         } catch (IOException e) {
-            Log.log("Файл с путями файлов не найден: " + e.getMessage());
+            System.out.println("Файл с путями файлов не найден: " + e.getMessage());
         }
 
         String textPath = props.getProperty("text_file");
@@ -26,10 +25,10 @@ public class TextMoodAnalyzer {
                 );
                 System.out.println("Значение настроения текста: " + moodScore);
             } catch (IOException e) {
-                Log.log("Ошибка чтения текстового файла. Проверьте правильность пути: " + e.getMessage());
+                System.out.println("Ошибка чтения текстового файла. Проверьте правильность пути: " + e.getMessage());
             }
         } else {
-            Log.log("Ошибка чтения файла. Проверьте правильность пути: " + textPath);
+            System.out.println("Ошибка чтения файла. Проверьте правильность пути: " + textPath);
         }
     }
 }
