@@ -1,13 +1,12 @@
-
 import com.maximus.MoodWordList;
 import org.junit.Test;
-
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+
 public class MoodWordListTest {
+
 
     @Test
     public void testAddPositiveWord() {
@@ -30,4 +29,24 @@ public class MoodWordListTest {
         assertEquals(1, moodWordList.getNegativeWords().size());
         assertTrue(negativeWords.contains(newNegativeWord));
     }
+
+
+    @Test
+    public void testSetPositiveWords() {
+        MoodWordList wordList = new MoodWordList();
+
+        List<String> positiveWords = List.of("успех", "легкость", "восторг");
+        wordList.setPositiveWords(positiveWords);
+        assertEquals(positiveWords, wordList.getPositiveWords());
+    }
+
+    @Test
+    public void testSetNegativeWords() {
+        MoodWordList wordList = new MoodWordList();
+
+        List<String> negativeWords = List.of("грусть", "тоска");
+        wordList.setNegativeWords(negativeWords);
+        assertEquals(negativeWords, wordList.getNegativeWords());
+    }
+
 }

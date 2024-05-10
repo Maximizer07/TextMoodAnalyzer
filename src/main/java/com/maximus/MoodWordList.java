@@ -3,6 +3,7 @@ package com.maximus;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -33,7 +34,7 @@ public class MoodWordList {
     }
 
     public void loadWords(String positiveWordsPath, String negativeWordsPath) {
-        if (!(Files.exists(Path.of(positiveWordsPath)) && Files.exists(Path.of(negativeWordsPath)))) {
+        if (!(Files.exists(Paths.get(positiveWordsPath)) && Files.exists(Paths.get(negativeWordsPath)))) {
             System.out.println("Ошибка загрузки файла слов (Проверьте правильность путей). Используются стандартные");
             positiveWordsPath = "src/main/resources/positive_words.txt";
             negativeWordsPath = "src/main/resources/negative_words.txt";
